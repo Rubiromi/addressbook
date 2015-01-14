@@ -14,17 +14,15 @@
  *= require_self
  */
 
-body {
-  min-height: 1000px;
-  background: linear-gradient(to bottom, gray, black);
+.navbar-default .navbar-nav>li>a {
   color: white;
+  font-size: 22px;
 }
 
-.jumbotron {
-  min-height: 700px;
-  margin: 30px;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.4);
+body {
+  min-height: 1200px;
+  background: linear-gradient(to bottom, gray, black);
+  color: white;
 }
 
 footer {
@@ -37,4 +35,28 @@ footer {
   margin-top: 17px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.jumbotron {
+  min-height: 700px;
+  margin: 30px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#main {
+  margin: 20px;
+}
+
+.navbar-brand img {
+  width: 25%;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: black;
+  padding: 15px 30px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
 }
