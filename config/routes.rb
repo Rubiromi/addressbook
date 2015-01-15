@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   resources :site, only: [:index]
   root "site#index"
 
-  resources :users do
-    resources :addresses
-  end
+  resources :users
+
+  resources :addresses
+  
 end
