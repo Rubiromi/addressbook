@@ -2,7 +2,7 @@ h1 Address Book
 
 div class="logo02"
   div class="col-md-8 col-md-offset-4"
-  -if user_signed_in?
-    = link_to(image_tag("main.png", id: "main"), users_path, class: 'img-responsive')
-  -else
-    = link_to(image_tag("main.png", id: "main"), new_user_session_path, class: 'img-responsive')
+    -if user_signed_in?
+      = link_to(image_tag("main.png", id: "main"), users_path, class: 'img-responsive')
+    -else
+      = link_to(image_tag("main.png", id: "main"), new_user_session_path, class: 'img-responsive')
