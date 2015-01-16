@@ -45,7 +45,7 @@ class AddressesController < ApplicationController
   def destroy
     @title = 'Delete Address'
     @address.destroy
-    redirect_to address_path
+    redirect_to :back
   end
 
   private
