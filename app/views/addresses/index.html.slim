@@ -1,2 +1,23 @@
-h1 Addresses#index
-p Find me in app/views/addresses/index.html.slim
+h1 Addresses
+
+table.table.table-triped
+  tr
+    th description
+    th zip
+    th street1
+    th street2
+    th city
+    th state
+    th country
+    th phone
+
+  - @addresses.each do |address|
+   tr
+    td = address.description
+    td = address.zip
+    td = address.street1
+    td = address.street2
+    td = address.city
+    td = address.state
+    td = address.country
+    td = address.phone

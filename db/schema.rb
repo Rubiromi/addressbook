@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150114154325) do
   enable_extension "plpgsql"
 
   create_table "addresses", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "description"
     t.string   "zip"
     t.string   "street1"
