@@ -1,0 +1,11 @@
+.alerts {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  .alerts-inner {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    z-index: 2000;
+  }
+}

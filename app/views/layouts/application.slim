@@ -12,12 +12,14 @@ html
 
     = render "layouts/nav"
 
-    - if notice
-      .notice
-        = notice
-    - if alert
-      .alert
-        = alert
+    .alerts
+      .alerts-inner
+        - if notice
+          .alert.alert-info
+            = notice
+        - if alert
+          .alert.alert-danger
+            = alert
 
     .container.main-wrapper
       div class="jumbotron"
