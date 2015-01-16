@@ -8,7 +8,8 @@ table.table.table-triped
 
   - @addresses.each do |address|
    tr
-    td = link_to address.description, address
+    td = link_to address.full_name, address
+    td = address.description
     td = address.phone
     td = link_to 'Edit', edit_address_path(address)
     td = link_to 'Destoy', address, method: :delete, data: { confirm: 'Are you sure you want to delete this address?'}

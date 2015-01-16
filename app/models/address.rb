@@ -1,5 +1,9 @@
 class Address < ActiveRecord::Base
   belongs_to :user
 
-  validates :description, :zip, :street1, :city, :state, :country, :phone, presence: true
+  validates :first_name, :last_name, :description, :zip, :street1, :city, :state, :country, :phone, presence: true
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end

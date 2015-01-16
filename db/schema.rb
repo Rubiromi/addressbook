@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20150114154325) do
 
   create_table "addresses", force: :cascade do |t|
     t.integer  "user_id"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "description"
     t.string   "zip"
     t.string   "street1"

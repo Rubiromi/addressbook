@@ -1,7 +1,8 @@
-h1 = @address.description
+h1 = @address.full_name
 
 table.table.table-triped
   tr
+    th description
     th zip
     th street1
     th street2
@@ -12,6 +13,7 @@ table.table.table-triped
     th colspan='2' controls
 
   tr
+    td = @address.description
     td = @address.zip
     td = @address.street1
     td = @address.street2
