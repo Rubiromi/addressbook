@@ -20,7 +20,7 @@ class AddressesController < ApplicationController
     @address = Address.new(address_params)
     @address.user_id = current_user.id
     if @address.save
-      flash[:notice] = "Address saved successfully"
+      flash[:notice] = "WOW! Address saved successfully"
       redirect_to addresses_path
     else
       flash[:alert] = "Failed to save address"
